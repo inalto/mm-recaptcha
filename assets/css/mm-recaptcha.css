@@ -1,0 +1,59 @@
+/* MM reCAPTCHA - stili di front-end */
+
+.mm-recaptcha-field {
+	margin: 0 0 16px;
+	max-width: 100%;
+}
+
+.mm-recaptcha-field .mm-recaptcha-widget {
+	max-width: 100%;
+}
+
+.mm-recaptcha-hp {
+	position: absolute !important;
+	left: -9999px !important;
+	top: -9999px !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden !important;
+}
+
+.mm-recaptcha-math {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.mm-recaptcha-math-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin: 0;
+}
+
+.mm-recaptcha-math-question {
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.mm-recaptcha-math-input {
+	width: 5em;
+	max-width: 5em;
+}
+
+.mm-recaptcha-legal {
+	font-size: 12px;
+	line-height: 1.5;
+	opacity: 0.8;
+	margin: 6px 0 0;
+}
+
+/* Le pagine di login di WordPress hanno una larghezza fissa. */
+body.login .mm-recaptcha-field {
+	margin-bottom: 16px;
+}
+
+body.login .mm-recaptcha-widget > div {
+	max-width: 100%;
+}

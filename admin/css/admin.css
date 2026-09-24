@@ -1,0 +1,194 @@
+/* MM reCAPTCHA - amministrazione */
+
+.mm-rc-wrap .mm-rc-status {
+	border-left: 4px solid #72aee6;
+	background: #fff;
+	padding: 12px 14px;
+	margin: 16px 0;
+	box-shadow: 0 1px 1px rgba( 0, 0, 0, 0.04 );
+}
+
+.mm-rc-wrap .mm-rc-status-ok {
+	border-left-color: #00a32a;
+}
+
+.mm-rc-wrap .mm-rc-status-warn {
+	border-left-color: #dba617;
+}
+
+.mm-rc-cards {
+	display: grid;
+	grid-template-columns: repeat( auto-fill, minmax( 260px, 1fr ) );
+	gap: 14px;
+	margin: 16px 0 26px;
+}
+
+.mm-rc-card {
+	position: relative;
+	display: block;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 16px 16px 44px;
+	cursor: pointer;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.mm-rc-card:hover {
+	border-color: #2271b1;
+}
+
+.mm-rc-card.is-selected {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.mm-rc-card input[type="radio"] {
+	position: absolute;
+	top: 16px;
+	right: 14px;
+	margin: 0;
+}
+
+.mm-rc-card-title {
+	display: block;
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 6px;
+	padding-right: 26px;
+}
+
+.mm-rc-card-desc {
+	display: block;
+	color: #50575e;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.mm-rc-card-list {
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+	color: #50575e;
+}
+
+.mm-rc-card-list li::before {
+	content: "•";
+	margin-right: 6px;
+	color: #8c8f94;
+}
+
+.mm-rc-badge {
+	position: absolute;
+	left: 16px;
+	bottom: 14px;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	padding: 2px 8px;
+	border-radius: 10px;
+}
+
+.mm-rc-badge-ok {
+	background: #edfaef;
+	color: #007017;
+}
+
+.mm-rc-badge-warn {
+	background: #fcf3dc;
+	color: #8a6116;
+}
+
+.mm-rc-help {
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 14px 18px;
+	margin: 0 0 18px;
+	max-width: 780px;
+}
+
+.mm-rc-help h3 {
+	margin-top: 0;
+}
+
+.mm-rc-help-needs {
+	margin: 0 0 12px 18px;
+	list-style: disc;
+}
+
+.mm-rc-help-steps {
+	margin: 12px 0 12px 20px;
+}
+
+.mm-rc-help-steps li {
+	margin-bottom: 4px;
+}
+
+.mm-rc-help-notes {
+	margin: 12px 0 0 18px;
+	list-style: disc;
+	color: #50575e;
+	font-size: 13px;
+}
+
+.mm-rc-help-links .button {
+	margin: 0 8px 8px 0;
+}
+
+.mm-rc-help-card {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 16px 20px;
+	margin-bottom: 18px;
+	max-width: 900px;
+}
+
+.mm-rc-test-panel {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+	padding: 14px 18px;
+	margin: 0 0 18px;
+	max-width: 780px;
+}
+
+.mm-rc-test-feedback {
+	margin-left: 8px;
+	font-style: italic;
+}
+
+.mm-rc-test-feedback.is-error {
+	color: #d63638;
+	font-style: normal;
+}
+
+.mm-rc-result-ok {
+	color: #007017;
+	font-weight: 600;
+}
+
+.mm-rc-result-error {
+	color: #d63638;
+	font-weight: 600;
+}
+
+.mm-rc-raw {
+	background: #f6f7f7;
+	border: 1px solid #dcdcde;
+	padding: 8px 10px;
+	overflow-x: auto;
+	font-size: 12px;
+	max-height: 200px;
+}
+
+.mm-rc-test-widget {
+	margin: 10px 0;
+}
+
+.mm-rc-panel[hidden] {
+	display: none;
+}
