@@ -5,7 +5,7 @@ Tags: captcha, recaptcha, hcaptcha, turnstile, antispam
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -116,6 +116,9 @@ No: la protezione del checkout usa gli hook del checkout classico. Gli altri mod
 La sfida viene rigenerata via JavaScript sulle pagine pubbliche, così la cache a pagina intera non congela una domanda già usata.
 
 == Changelog ==
+
+= 1.1.1 =
+* Correzione: nel modulo Contatti di Divi 5 il captcha è allineato ai campi e staccato dal messaggio.
 
 = 1.1.0 =
 * Nuovo: integrazione con il modulo Contatti di Divi.

@@ -62,8 +62,13 @@ body.login .mm-recaptcha-widget > div {
 .et_pb_contact_form .mm-recaptcha-divi {
 	clear: both;
 	width: 100%;
-	padding: 0 0 3% 3%;
+	padding: 3% 0 3% 3%;
 	box-sizing: border-box;
+}
+
+/* Divi 5 azzera il rientro dei campi: il captcha resta allineato a loro. */
+.et_pb_contact_form:not(.et_block_module) .mm-recaptcha-divi {
+	padding-left: 0;
 }
 
 .et_pb_contact_form .mm-recaptcha-divi .mm-recaptcha-field {
