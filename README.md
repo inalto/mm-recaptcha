@@ -1,6 +1,6 @@
 # MM reCAPTCHA
 
-Protezione captcha per WordPress, WooCommerce e Contact Form 7.
+Protezione captcha per WordPress, WooCommerce, Contact Form 7 e Divi.
 
 Sette provider, tutti pienamente implementati: nessuna voce selezionabile che poi non fa nulla, nessuna funzione riservata a una versione a pagamento.
 
@@ -30,6 +30,7 @@ Nasce come sostituto di *Advanced Google reCAPTCHA* (WP Captcha 5.40), la cui ve
 **WordPress** — accesso, registrazione, password dimenticata, reimpostazione password, commenti
 **WooCommerce** — accesso, registrazione, recupero password, checkout classico, pagamento di un ordine esistente
 **Contact Form 7** — tag `[mm_captcha mm-captcha-1]` e inserimento automatico su tutti i moduli
+**Divi** — modulo Contatti, captcha inserito automaticamente prima del pulsante di invio
 **Moduli personalizzati** — shortcode `[mm_recaptcha]` e API PHP
 
 ## Come ottenere le chiavi
@@ -103,7 +104,7 @@ Per registrare un provider aggiuntivo basta estendere `MM_Recaptcha\Providers\Pr
 
 ## Requisiti
 
-WordPress 6.0+ · PHP 7.4+ · WooCommerce e Contact Form 7 facoltativi
+WordPress 6.0+ · PHP 7.4+ · WooCommerce, Contact Form 7 e Divi facoltativi
 
 ## Limiti noti
 

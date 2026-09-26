@@ -373,6 +373,9 @@ class Settings {
 				'cf7'             => array( __( 'Moduli Contact Form 7', 'mm-recaptcha' ), __( 'Abilita il tag [mm_captcha mm-captcha-1] nei moduli.', 'mm-recaptcha' ) ),
 				'cf7_auto_inject' => array( __( 'Inserimento automatico', 'mm-recaptcha' ), __( 'Aggiunge il captcha a tutti i moduli che non contengono già il tag.', 'mm-recaptcha' ) ),
 			),
+			'Divi'                            => array(
+				'divi' => array( __( 'Modulo Contatti di Divi', 'mm-recaptcha' ), __( 'Aggiunge il captcha a tutti i moduli Contatti costruiti con Divi, prima del pulsante di invio.', 'mm-recaptcha' ) ),
+			),
 			__( 'Altro', 'mm-recaptcha' )     => array(
 				'custom' => array( __( 'Moduli personalizzati', 'mm-recaptcha' ), __( 'Shortcode [mm_recaptcha] e funzioni mm_recaptcha_field() / mm_recaptcha_verify().', 'mm-recaptcha' ) ),
 			),
@@ -398,6 +401,10 @@ class Settings {
 			}
 		} else {
 			echo '<p class="description">' . esc_html__( 'Contact Form 7 non è attivo: le relative opzioni non hanno effetto.', 'mm-recaptcha' ) . '</p>';
+		}
+
+		if ( ! Integrations\Integration_Divi::available() ) {
+			echo '<p class="description">' . esc_html__( 'Divi non è attivo: l’opzione del modulo Contatti non ha effetto.', 'mm-recaptcha' ) . '</p>';
 		}
 
 		foreach ( $groups as $group_label => $fields ) {

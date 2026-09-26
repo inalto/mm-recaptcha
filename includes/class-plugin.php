@@ -10,6 +10,7 @@ namespace MM_Recaptcha;
 use MM_Recaptcha\Integrations\Integration_WP;
 use MM_Recaptcha\Integrations\Integration_WooCommerce;
 use MM_Recaptcha\Integrations\Integration_CF7;
+use MM_Recaptcha\Integrations\Integration_Divi;
 use MM_Recaptcha\Providers\Math;
 
 defined( 'ABSPATH' ) || exit;
@@ -76,6 +77,10 @@ class Plugin {
 
 		if ( defined( 'WPCF7_VERSION' ) ) {
 			Integration_CF7::instance()->init();
+		}
+
+		if ( Integration_Divi::available() ) {
+			Integration_Divi::instance()->init();
 		}
 	}
 

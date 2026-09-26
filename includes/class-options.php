@@ -85,6 +85,7 @@ class Options {
 				'woo_pay'          => 0,
 				'cf7'              => 0,
 				'cf7_auto_inject'  => 0,
+				'divi'             => 0,
 				'custom'           => 1,
 			),
 			'skip_logged_in'       => 1,

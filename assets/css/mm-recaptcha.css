@@ -57,3 +57,15 @@ body.login .mm-recaptcha-field {
 body.login .mm-recaptcha-widget > div {
 	max-width: 100%;
 }
+
+/* Divi: i campi del modulo Contatti sono flottanti con rientro sinistro del 3%. */
+.et_pb_contact_form .mm-recaptcha-divi {
+	clear: both;
+	width: 100%;
+	padding: 0 0 3% 3%;
+	box-sizing: border-box;
+}
+
+.et_pb_contact_form .mm-recaptcha-divi .mm-recaptcha-field {
+	margin: 0;
+}

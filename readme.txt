@@ -5,7 +5,7 @@ Tags: captcha, recaptcha, hcaptcha, turnstile, antispam
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -32,6 +32,7 @@ Moduli protetti:
 * WordPress: accesso, registrazione, password dimenticata, reimpostazione password, commenti
 * WooCommerce: accesso, registrazione, recupero password, checkout classico, pagamento di un ordine
 * Contact Form 7: tag `[mm_captcha mm-captcha-1]` e inserimento automatico
+* Divi: modulo Contatti (captcha inserito automaticamente prima del pulsante di invio)
 * Moduli personalizzati: shortcode `[mm_recaptcha]` e funzioni PHP
 
 == Come ottenere le chiavi ==
@@ -115,6 +116,10 @@ No: la protezione del checkout usa gli hook del checkout classico. Gli altri mod
 La sfida viene rigenerata via JavaScript sulle pagine pubbliche, così la cache a pagina intera non congela una domanda già usata.
 
 == Changelog ==
+
+= 1.1.0 =
+* Nuovo: integrazione con il modulo Contatti di Divi.
+* Correzione: i captcha eseguiti all'invio fermano anche i gestori AJAX di altri plugin, che altrimenti inviavano il modulo senza token.
 
 = 1.0.0 =
 * Prima versione.

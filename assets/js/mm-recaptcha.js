@@ -334,6 +334,9 @@
 				}
 
 				event.preventDefault();
+				// Ferma anche i gestori AJAX (Divi, Contact Form 7) che altrimenti
+				// invierebbero subito senza token: il modulo viene reinviato dopo.
+				event.stopImmediatePropagation();
 
 				var submitter = event.submitter || lastSubmitter;
 

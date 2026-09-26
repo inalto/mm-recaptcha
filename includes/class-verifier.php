@@ -74,6 +74,7 @@ class Verifier {
 			'wc_checkout'       => 'woo_checkout',
 			'wc_pay'            => 'woo_pay',
 			'cf7'               => 'cf7',
+			'divi'              => 'divi',
 			'custom'            => 'custom',
 		);
 
